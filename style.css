@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.header .more-info {
+.header__info {
   font-family: fantasy, cursive;
 }
 
@@ -32,7 +32,8 @@ body {
   margin: 0 auto 0;
 }
 
-.task {
+.task__name,
+.task__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -137,13 +138,13 @@ li >    input[type="text"] {
   width: 226px;
 }
 
-button.delete img {
+button.task__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+button.task__delete img:hover {
   transform: rotateZ(0);
 }
 
